@@ -1,31 +1,59 @@
 
 
-## Enhance Web App with Bundles, Workflows, and Installer
+## Import All 1,400+ Real Skills from GitHub Repository
 
-The system summary describes features (bundles, workflows, installer CLI) that aren't yet reflected in the web app. Here's a plan to add them.
+The current site has only 49 hardcoded mock skills. The actual GitHub repo has a `data/skills_index.json` with 1,400+ real skills, plus `data/bundles.json` with real bundles and `data/workflows.json` with real workflows. This plan replaces all mock data with the real data.
 
-### New Pages
+### Approach
 
-1. **Bundles page (`/bundles`)** — Curated skill bundles (e.g., "SaaS MVP Starter", "Security Hardening", "DevOps Essentials") showing grouped skills with one-click install commands for the entire bundle
-2. **Workflows page (`/workflows`)** — Multi-step automated workflows that chain skills together (e.g., "PR Review Pipeline": lint → test-gen → security-scan → changelog)
-3. **Install page (`/install`)** — Quick-start guide showing `npx antigravity-awesome-skills` usage, tool-specific plugin instructions, and configuration options
+**Build-time script** — Write a Node script that fetches the three JSON files from the GitHub raw URLs, transforms them into the app's data format, and writes them as TypeScript files. This keeps the app fully static (no runtime fetching) and ensures all 1,400+ skills are bundled.
 
-### Data Changes
+### Data Mapping
 
-- Add `bundles` array to `skills-data.ts` with ~8 curated bundles, each referencing existing skill IDs
-- Add `workflows` array with ~5 workflow definitions showing skill chaining
-- Add bundle/workflow TypeScript types to `types.ts`
+The real `skills_index.json` entries have: `id`, `path`, `category`, `name`, `description`, `risk`, `source`, `date_added`. They lack: `author`, `tags`, `supportedTools`, `language`, `installCommands`, `usageExample`, `stars`, `downloads`.
 
-### Navigation Updates
+Strategy:
+- **Update the `Skill` type** to match the real data shape: add `path`, `risk`, `source`, `dateAdded`; make `author`, `tags`, `supportedTools`, `language`, `installCommands`, `usageExample`, `stars`, `downloads` optional or derived
+- **Derive values**: extract `tags` from category + name tokens; infer `language` from path/name patterns; generate deterministic `stars`/`downloads` from a hash of the skill ID (so values are stable); set `supportedTools` to all 5 tools by default; build `installCommands` from the skill ID
+- **Featured skills**: mark skills with `source: "official"` or first ~20 alphabetically as featured
 
-- Add Bundles, Workflows, and Install links to Header nav
-- Add a "Quick Install" CTA button in the Header (styled with primary color)
-- Update Homepage to include a bundles preview section and install command snippet
+### Real Bundles & Workflows
+
+The real `bundles.json` has bundle groups like `core-dev`, `ops-core`, etc. with arrays of skill IDs. The real `workflows.json` has structured multi-step workflows. Both will replace the current mock data.
+
+### Steps
+
+1. **Write a build script** (`scripts/fetch-skills.ts`) that:
+   - Fetches `skills_index.json`, `bundles.json`, `workflows.json` from GitHub raw URLs
+   - Transforms skills into the updated `Skill` type with derived fields
+   - Transforms bundles and workflows into the app's format
+   - Writes `src/lib/generated-skills.ts` (the massive data file)
+
+2. **Update `src/lib/types.ts`** — Relax types to accommodate real data (category as `string` instead of union, language as `string`, etc.)
+
+3. **Update `src/lib/skills-data.ts`** — Import from generated file, keep search/filter/helper functions
+
+4. **Update filter options** — `allCategories`, `allLanguages` will be auto-derived from the real data (many more categories than the current 10)
+
+5. **Update UI components** — SkillCard and skill detail page to handle optional fields gracefully (e.g., show "community" as author if none, hide empty install commands, show `source` and `risk` badges)
+
+6. **Run the script** during build to generate the data file
 
 ### Technical Details
 
-- 3 new route files in `src/routes/`
-- Updated `Header.tsx` with expanded nav
-- Updated `skills-data.ts` and `types.ts` with new data structures
-- All client-side, no backend needed
+- Generated TS file will be ~500KB+ but compresses well with gzip
+- Categories from real data include: `andruia`, `game-development`, `uncategorized`, and many more
+- Bundles from real data: `core-dev`, `ops-core`, `ai-ml`, `data-eng`, `security`, `mobile`, etc.
+- Workflows from real data: `ship-saas-mvp`, plus several others with real step structures
+
+### Files Changed/Created
+
+- `scripts/fetch-skills.ts` — new build script
+- `src/lib/types.ts` — relaxed types
+- `src/lib/generated-skills.ts` — generated data (1,400+ entries)
+- `src/lib/skills-data.ts` — imports from generated, keeps helpers
+- `src/components/SkillCard.tsx` — handle optional fields
+- `src/routes/skills.$skillId.tsx` — handle optional fields, show source/risk
+- `src/routes/catalog.tsx` — add source filter
+- `src/components/FilterBar.tsx` — add source filter option
 
