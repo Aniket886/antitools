@@ -10,6 +10,8 @@ import "@fontsource/dm-sans/600.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Toaster } from "@/components/ui/sonner";
+import { CompareProvider } from "@/hooks/use-compare";
+import { CompareBar } from "@/components/CompareBar";
 
 function NotFoundComponent() {
   return (
@@ -68,13 +70,16 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <Header />
-      <main className="flex-1">
-        <Outlet />
-      </main>
-      <Footer />
-      <Toaster />
-    </div>
+    <CompareProvider>
+      <div className="flex min-h-screen flex-col">
+        <Header />
+        <main className="flex-1">
+          <Outlet />
+        </main>
+        <Footer />
+        <CompareBar />
+        <Toaster />
+      </div>
+    </CompareProvider>
   );
 }
