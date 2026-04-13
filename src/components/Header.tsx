@@ -1,9 +1,17 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { useState } from "react";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const navLinks = [
+    { to: "/" as const, label: "Home", exact: true },
+    { to: "/catalog" as const, label: "Catalog" },
+    { to: "/bundles" as const, label: "Bundles" },
+    { to: "/workflows" as const, label: "Workflows" },
+    { to: "/about" as const, label: "About" },
+  ];
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
@@ -18,27 +26,23 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
+          {navLinks.map(({ to, label, exact }) => (
+            <Link
+              key={to}
+              to={to}
+              className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              activeProps={{ className: "rounded-md px-3 py-2 text-sm font-medium text-foreground" }}
+              activeOptions={exact ? { exact: true } : undefined}
+            >
+              {label}
+            </Link>
+          ))}
           <Link
-            to="/"
-            className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-            activeProps={{ className: "rounded-md px-3 py-2 text-sm font-medium text-foreground" }}
-            activeOptions={{ exact: true }}
+            to="/install"
+            className="ml-2 inline-flex items-center gap-1.5 rounded-lg bg-primary px-3.5 py-1.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            Home
-          </Link>
-          <Link
-            to="/catalog"
-            className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-            activeProps={{ className: "rounded-md px-3 py-2 text-sm font-medium text-foreground" }}
-          >
-            Catalog
-          </Link>
-          <Link
-            to="/about"
-            className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-            activeProps={{ className: "rounded-md px-3 py-2 text-sm font-medium text-foreground" }}
-          >
-            About
+            <Download className="h-3.5 w-3.5" />
+            Install
           </Link>
         </nav>
 
@@ -53,9 +57,15 @@ export function Header() {
       {mobileOpen && (
         <div className="border-t border-border bg-background px-4 py-3 md:hidden">
           <nav className="flex flex-col gap-1">
-            <Link to="/" className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground" onClick={() => setMobileOpen(false)}>Home</Link>
-            <Link to="/catalog" className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground" onClick={() => setMobileOpen(false)}>Catalog</Link>
-            <Link to="/about" className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground" onClick={() => setMobileOpen(false)}>About</Link>
+            {navLinks.map(({ to, label }) => (
+              <Link key={to} to={to} className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground" onClick={() => setMobileOpen(false)}>
+                {label}
+              </Link>
+            ))}
+            <Link to="/install" className="mt-2 inline-flex items-center justify-center gap-1.5 rounded-lg bg-primary px-3.5 py-2 text-sm font-semibold text-primary-foreground" onClick={() => setMobileOpen(false)}>
+              <Download className="h-3.5 w-3.5" />
+              Install
+            </Link>
           </nav>
         </div>
       )}
