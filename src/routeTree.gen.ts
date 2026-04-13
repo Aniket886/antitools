@@ -18,6 +18,7 @@ import { Route as BundlesRouteImport } from './routes/bundles'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SkillsSkillIdRouteImport } from './routes/skills.$skillId'
+import { Route as ContributorsAuthorRouteImport } from './routes/contributors.$author'
 
 const WorkflowsRoute = WorkflowsRouteImport.update({
   id: '/workflows',
@@ -64,6 +65,11 @@ const SkillsSkillIdRoute = SkillsSkillIdRouteImport.update({
   path: '/skills/$skillId',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContributorsAuthorRoute = ContributorsAuthorRouteImport.update({
+  id: '/contributors/$author',
+  path: '/contributors/$author',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -74,6 +80,7 @@ export interface FileRoutesByFullPath {
   '/install': typeof InstallRoute
   '/leaderboard': typeof LeaderboardRoute
   '/workflows': typeof WorkflowsRoute
+  '/contributors/$author': typeof ContributorsAuthorRoute
   '/skills/$skillId': typeof SkillsSkillIdRoute
 }
 export interface FileRoutesByTo {
@@ -85,6 +92,7 @@ export interface FileRoutesByTo {
   '/install': typeof InstallRoute
   '/leaderboard': typeof LeaderboardRoute
   '/workflows': typeof WorkflowsRoute
+  '/contributors/$author': typeof ContributorsAuthorRoute
   '/skills/$skillId': typeof SkillsSkillIdRoute
 }
 export interface FileRoutesById {
@@ -97,6 +105,7 @@ export interface FileRoutesById {
   '/install': typeof InstallRoute
   '/leaderboard': typeof LeaderboardRoute
   '/workflows': typeof WorkflowsRoute
+  '/contributors/$author': typeof ContributorsAuthorRoute
   '/skills/$skillId': typeof SkillsSkillIdRoute
 }
 export interface FileRouteTypes {
@@ -110,6 +119,7 @@ export interface FileRouteTypes {
     | '/install'
     | '/leaderboard'
     | '/workflows'
+    | '/contributors/$author'
     | '/skills/$skillId'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -121,6 +131,7 @@ export interface FileRouteTypes {
     | '/install'
     | '/leaderboard'
     | '/workflows'
+    | '/contributors/$author'
     | '/skills/$skillId'
   id:
     | '__root__'
@@ -132,6 +143,7 @@ export interface FileRouteTypes {
     | '/install'
     | '/leaderboard'
     | '/workflows'
+    | '/contributors/$author'
     | '/skills/$skillId'
   fileRoutesById: FileRoutesById
 }
@@ -144,6 +156,7 @@ export interface RootRouteChildren {
   InstallRoute: typeof InstallRoute
   LeaderboardRoute: typeof LeaderboardRoute
   WorkflowsRoute: typeof WorkflowsRoute
+  ContributorsAuthorRoute: typeof ContributorsAuthorRoute
   SkillsSkillIdRoute: typeof SkillsSkillIdRoute
 }
 
@@ -212,6 +225,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SkillsSkillIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contributors/$author': {
+      id: '/contributors/$author'
+      path: '/contributors/$author'
+      fullPath: '/contributors/$author'
+      preLoaderRoute: typeof ContributorsAuthorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -224,6 +244,7 @@ const rootRouteChildren: RootRouteChildren = {
   InstallRoute: InstallRoute,
   LeaderboardRoute: LeaderboardRoute,
   WorkflowsRoute: WorkflowsRoute,
+  ContributorsAuthorRoute: ContributorsAuthorRoute,
   SkillsSkillIdRoute: SkillsSkillIdRoute,
 }
 export const routeTree = rootRouteImport
