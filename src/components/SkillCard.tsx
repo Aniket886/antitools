@@ -9,6 +9,14 @@ function formatNumber(n: number): string {
   return String(n);
 }
 
+function isNew(dateAdded?: string): boolean {
+  if (!dateAdded) return false;
+  const added = new Date(dateAdded);
+  const sevenDaysAgo = new Date();
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  return added >= sevenDaysAgo;
+}
+
 export function SkillCard({ skill }: { skill: Skill }) {
   const { toggle, isSelected } = useCompare();
   const selected = isSelected(skill.id);
@@ -41,6 +49,9 @@ export function SkillCard({ skill }: { skill: Skill }) {
           <h3 className="font-heading text-base font-semibold text-card-foreground group-hover:text-primary transition-colors">
             {skill.name}
           </h3>
+          {isNew(skill.dateAdded) && (
+            <Badge className="ml-2 shrink-0 text-[10px] bg-emerald-600 text-white hover:bg-emerald-600">New</Badge>
+          )}
           {skill.featured && (
             <Badge variant="default" className="ml-2 shrink-0 text-[10px]">Featured</Badge>
           )}
