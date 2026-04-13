@@ -72,7 +72,7 @@ function BundleCard({ bundle }: { bundle: (typeof bundles)[number] }) {
 
       <div className="mt-4">
         <p className="mb-2 text-xs font-medium text-muted-foreground">
-          Includes {skills.length} skills:
+          Includes {bundle.totalSkills ?? skills.length} skills{skills.length < (bundle.totalSkills ?? skills.length) ? ` (showing ${skills.length})` : ""}:
         </p>
         <div className="flex flex-wrap gap-1.5">
           {skills.map((skill) =>

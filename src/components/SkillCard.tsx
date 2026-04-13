@@ -51,6 +51,9 @@ export function SkillCard({ skill }: { skill: Skill }) {
         </p>
 
         <div className="mb-4 flex flex-wrap gap-1.5">
+          {skill.source === "official" && (
+            <Badge variant="default" className="text-[10px] font-normal">Official</Badge>
+          )}
           {skill.tags.slice(0, 3).map((tag) => (
             <Badge key={tag} variant="secondary" className="text-[10px] font-normal">
               {tag}
