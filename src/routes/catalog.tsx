@@ -12,9 +12,9 @@ export const Route = createFileRoute("/catalog")({
   head: () => ({
     meta: [
       { title: "Skill Catalog — Antigravity Awesome Skills" },
-      { name: "description", content: "Browse and filter 1,400+ agentic AI coding skills by tool, category, and language." },
+      { name: "description", content: "Browse and filter 1,200+ agentic AI coding skills by tool, category, language, and source." },
       { property: "og:title", content: "Skill Catalog — Antigravity Awesome Skills" },
-      { property: "og:description", content: "Browse and filter 1,400+ agentic AI coding skills." },
+      { property: "og:description", content: "Browse and filter 1,200+ agentic AI coding skills." },
     ],
   }),
   component: CatalogPage,
@@ -25,11 +25,12 @@ function CatalogPage() {
   const [tool, setTool] = useState("");
   const [category, setCategory] = useState("");
   const [language, setLanguage] = useState("");
+  const [source, setSource] = useState("");
   const [page, setPage] = useState(1);
 
   const results = useMemo(
-    () => searchSkills(query, { tool, category, language }),
-    [query, tool, category, language]
+    () => searchSkills(query, { tool, category, language, source }),
+    [query, tool, category, language, source]
   );
 
   const totalPages = Math.max(1, Math.ceil(results.length / ITEMS_PER_PAGE));
@@ -39,11 +40,11 @@ function CatalogPage() {
     currentPage * ITEMS_PER_PAGE
   );
 
-  // Reset to page 1 when filters change
   const handleQueryChange = (v: string) => { setQuery(v); setPage(1); };
   const handleToolChange = (v: string) => { setTool(v); setPage(1); };
   const handleCategoryChange = (v: string) => { setCategory(v); setPage(1); };
   const handleLanguageChange = (v: string) => { setLanguage(v); setPage(1); };
+  const handleSourceChange = (v: string) => { setSource(v); setPage(1); };
 
   const pageNumbers = getPageNumbers(currentPage, totalPages);
 
@@ -52,7 +53,7 @@ function CatalogPage() {
       <div className="mb-8">
         <h1 className="font-heading text-3xl font-bold text-foreground">Skill Catalog</h1>
         <p className="mt-2 text-muted-foreground">
-          Browse and filter all available agentic skills
+          Browse and filter all {results.length > 0 ? "1,200+" : ""} available agentic skills
         </p>
       </div>
 
@@ -65,9 +66,11 @@ function CatalogPage() {
           tool={tool}
           category={category}
           language={language}
+          source={source}
           onToolChange={handleToolChange}
           onCategoryChange={handleCategoryChange}
           onLanguageChange={handleLanguageChange}
+          onSourceChange={handleSourceChange}
         />
       </div>
 

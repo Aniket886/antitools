@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
-import { ArrowLeft, Star, Download, Copy, Check, ExternalLink } from "lucide-react";
+import { ArrowLeft, Star, Download, Copy, Check, Shield } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { getSkillById } from "@/lib/skills-data";
 import { toast } from "sonner";
@@ -62,9 +62,16 @@ function SkillDetailPage() {
       </Link>
 
       <div className="mb-8">
-        <div className="flex items-start gap-3">
+        <div className="flex items-start gap-3 flex-wrap">
           <h1 className="font-heading text-3xl font-bold text-foreground">{skill.name}</h1>
           {skill.featured && <Badge className="mt-1">Featured</Badge>}
+          {skill.source === "official" && <Badge variant="default" className="mt-1">Official</Badge>}
+          {skill.risk && (
+            <Badge variant={skill.risk === "safe" ? "secondary" : "outline"} className="mt-1 gap-1">
+              <Shield className="h-3 w-3" />
+              {skill.risk}
+            </Badge>
+          )}
         </div>
         <p className="mt-1 text-sm text-muted-foreground">by {skill.author}</p>
         <p className="mt-4 text-lg text-muted-foreground leading-relaxed">{skill.description}</p>
@@ -72,6 +79,7 @@ function SkillDetailPage() {
         <div className="mt-4 flex items-center gap-4 text-sm text-muted-foreground">
           <span className="flex items-center gap-1"><Star className="h-4 w-4" /> {skill.stars.toLocaleString()} stars</span>
           <span className="flex items-center gap-1"><Download className="h-4 w-4" /> {skill.downloads.toLocaleString()} downloads</span>
+          {skill.dateAdded && <span>Added {skill.dateAdded}</span>}
         </div>
       </div>
 
@@ -100,18 +108,20 @@ function SkillDetailPage() {
       </div>
 
       {/* Install Commands */}
-      <div className="mb-8">
-        <h2 className="font-heading mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">Install Commands</h2>
-        <div className="space-y-3">
-          {Object.entries(skill.installCommands).map(([tool, cmd]) => (
-            <div key={tool} className="flex items-center gap-3 rounded-lg border border-border bg-secondary/50 p-3">
-              <span className="shrink-0 text-xs font-medium text-muted-foreground w-24">{tool}</span>
-              <code className="flex-1 text-sm text-foreground font-mono break-all">{cmd}</code>
-              <CopyButton text={cmd!} />
-            </div>
-          ))}
+      {Object.keys(skill.installCommands).length > 0 && (
+        <div className="mb-8">
+          <h2 className="font-heading mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">Install Commands</h2>
+          <div className="space-y-3">
+            {Object.entries(skill.installCommands).map(([tool, cmd]) => (
+              <div key={tool} className="flex items-center gap-3 rounded-lg border border-border bg-secondary/50 p-3">
+                <span className="shrink-0 text-xs font-medium text-muted-foreground w-24">{tool}</span>
+                <code className="flex-1 text-sm text-foreground font-mono break-all">{cmd}</code>
+                <CopyButton text={cmd} />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Usage Example */}
       <div className="mb-8">

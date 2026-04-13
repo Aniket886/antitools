@@ -1,32 +1,22 @@
 export type AITool = "Claude Code" | "Cursor" | "Codex CLI" | "Gemini CLI" | "Antigravity";
 
-export type SkillCategory =
-  | "debugging"
-  | "refactoring"
-  | "testing"
-  | "code-generation"
-  | "documentation"
-  | "devops"
-  | "data"
-  | "security"
-  | "performance"
-  | "architecture";
-
-export type Language = "Python" | "TypeScript" | "JavaScript" | "Rust" | "Go" | "Ruby" | "Java" | "Multi";
-
 export interface Skill {
   id: string;
   name: string;
   description: string;
+  path?: string;
   author: string;
   tags: string[];
-  supportedTools: AITool[];
-  language: Language;
-  category: SkillCategory;
-  installCommands: Partial<Record<AITool, string>>;
+  supportedTools: string[];
+  language: string;
+  category: string;
+  installCommands: Record<string, string>;
   usageExample: string;
   stars: number;
   downloads: number;
+  risk?: string;
+  source?: string;
+  dateAdded?: string;
   featured?: boolean;
 }
 
@@ -38,6 +28,7 @@ export interface Bundle {
   icon: string;
   installCommand: string;
   tags: string[];
+  totalSkills?: number;
 }
 
 export interface Workflow {
@@ -45,7 +36,7 @@ export interface Workflow {
   name: string;
   description: string;
   steps: WorkflowStep[];
-  supportedTools: AITool[];
+  supportedTools: string[];
   installCommand: string;
   tags: string[];
 }
