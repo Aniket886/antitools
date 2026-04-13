@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo } from "react";
-import { ArrowLeft, Star, Download, Package, User } from "lucide-react";
+import { ArrowLeft, Star, Download, Package } from "lucide-react";
+import { AuthorAvatar } from "@/components/AuthorAvatar";
 import { Badge } from "@/components/ui/badge";
 import { skills } from "@/lib/skills-data";
 import type { Skill } from "@/lib/types";
@@ -64,9 +65,7 @@ function ContributorProfilePage() {
 
       {/* Profile Header */}
       <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-start">
-        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-primary/10">
-          <User className="h-8 w-8 text-primary" />
-        </div>
+        <AuthorAvatar name={decodedAuthor} size={64} className="shrink-0" />
         <div className="flex-1">
           <h1 className="font-heading text-3xl font-bold text-foreground">{decodedAuthor}</h1>
           <p className="mt-1 text-muted-foreground">Skill contributor</p>
