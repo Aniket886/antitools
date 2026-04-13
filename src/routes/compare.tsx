@@ -42,7 +42,7 @@ function CopyBtn({ text }: { text: string }) {
 
 function ComparePage() {
   const { ids } = Route.useSearch();
-  const skills = ids.map(getSkillById).filter((s): s is Skill => !!s);
+  const skills: Skill[] = (ids as string[]).map(getSkillById).filter((s): s is Skill => !!s);
 
   if (skills.length < 2) {
     return (
