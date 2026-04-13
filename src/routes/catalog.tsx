@@ -39,6 +39,8 @@ function CatalogPage() {
       case "downloads-asc": sorted.sort((a, b) => a.downloads - b.downloads); break;
       case "name-asc": sorted.sort((a, b) => a.name.localeCompare(b.name)); break;
       case "name-desc": sorted.sort((a, b) => b.name.localeCompare(a.name)); break;
+      case "date-desc": sorted.sort((a, b) => (b.dateAdded ?? "").localeCompare(a.dateAdded ?? "")); break;
+      case "date-asc": sorted.sort((a, b) => (a.dateAdded ?? "").localeCompare(b.dateAdded ?? "")); break;
     }
     return sorted;
   }, [query, tool, category, language, source, sort]);
@@ -80,6 +82,8 @@ function CatalogPage() {
           <option value="downloads-asc">↓ Fewest Downloads</option>
           <option value="name-asc">A → Z</option>
           <option value="name-desc">Z → A</option>
+          <option value="date-desc">📅 Newest First</option>
+          <option value="date-asc">📅 Oldest First</option>
         </select>
       </div>
 
