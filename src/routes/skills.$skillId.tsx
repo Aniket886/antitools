@@ -44,7 +44,7 @@ function CopyButton({ text }: { text: string }) {
       onClick={handleCopy}
       className="shrink-0 rounded-md p-1.5 text-muted-foreground hover:text-foreground transition-colors"
     >
-      {copied ? <Check className="h-4 w-4 text-green-400" /> : <Copy className="h-4 w-4" />}
+      {copied ? <Check className="h-4 w-4 text-primary" /> : <Copy className="h-4 w-4" />}
     </button>
   );
 }
