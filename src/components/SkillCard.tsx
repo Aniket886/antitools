@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Star, Download, Check } from "lucide-react";
+import { Star, Download, Check, Calendar } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useCompare } from "@/hooks/use-compare";
 import type { Skill } from "@/lib/types";
@@ -71,6 +71,12 @@ export function SkillCard({ skill }: { skill: Skill }) {
               <Download className="h-3 w-3" />
               {formatNumber(skill.downloads)}
             </span>
+            {skill.dateAdded && (
+              <span className="flex items-center gap-1">
+                <Calendar className="h-3 w-3" />
+                {new Date(skill.dateAdded).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+              </span>
+            )}
           </div>
           <div className="flex items-center gap-1">
             {skill.supportedTools.slice(0, 3).map((tool) => (
