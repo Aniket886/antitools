@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { Star, Download, Package, Trophy, Medal, Award } from "lucide-react";
+import { AuthorAvatar } from "@/components/AuthorAvatar";
 import { skills } from "@/lib/skills-data";
 
 export const Route = createFileRoute("/leaderboard")({
@@ -103,6 +104,9 @@ function LeaderboardPage() {
               }`}
             >
               <div className="mb-3 flex justify-center">{rankIcons[i]}</div>
+              <div className="mb-2 flex justify-center">
+                <AuthorAvatar name={c.author} size={48} />
+              </div>
               <div className="mb-1 text-xs font-medium text-muted-foreground">#{i + 1}</div>
               <Link to="/contributors/$author" params={{ author: c.author }} className="font-heading text-lg font-bold text-foreground hover:text-primary transition-colors">
                 {c.author}
@@ -175,7 +179,8 @@ function LeaderboardPage() {
                     {i < 3 ? rankIcons[i] : i + 1}
                   </td>
                   <td className="px-4 py-3 font-medium">
-                    <Link to="/contributors/$author" params={{ author: c.author }} className="text-foreground hover:text-primary transition-colors">
+                    <Link to="/contributors/$author" params={{ author: c.author }} className="flex items-center gap-2 text-foreground hover:text-primary transition-colors">
+                      <AuthorAvatar name={c.author} size={24} />
                       {c.author}
                     </Link>
                   </td>
