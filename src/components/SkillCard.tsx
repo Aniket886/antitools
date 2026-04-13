@@ -50,7 +50,7 @@ export function SkillCard({ skill }: { skill: Skill }) {
             {skill.name}
           </h3>
           {isNew(skill.dateAdded) && (
-            <Badge className="ml-2 shrink-0 text-[10px] bg-emerald-600 text-white hover:bg-emerald-600">New</Badge>
+            <Badge variant="secondary" className="ml-2 shrink-0 text-[10px] border border-primary/30 text-primary font-semibold">New</Badge>
           )}
           {skill.featured && (
             <Badge variant="default" className="ml-2 shrink-0 text-[10px]">Featured</Badge>
