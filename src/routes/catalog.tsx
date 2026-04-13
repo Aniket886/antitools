@@ -26,12 +26,22 @@ function CatalogPage() {
   const [category, setCategory] = useState("");
   const [language, setLanguage] = useState("");
   const [source, setSource] = useState("");
+  const [sort, setSort] = useState("stars-desc");
   const [page, setPage] = useState(1);
 
-  const results = useMemo(
-    () => searchSkills(query, { tool, category, language, source }),
-    [query, tool, category, language, source]
-  );
+  const results = useMemo(() => {
+    const filtered = searchSkills(query, { tool, category, language, source });
+    const sorted = [...filtered];
+    switch (sort) {
+      case "stars-desc": sorted.sort((a, b) => b.stars - a.stars); break;
+      case "stars-asc": sorted.sort((a, b) => a.stars - b.stars); break;
+      case "downloads-desc": sorted.sort((a, b) => b.downloads - a.downloads); break;
+      case "downloads-asc": sorted.sort((a, b) => a.downloads - b.downloads); break;
+      case "name-asc": sorted.sort((a, b) => a.name.localeCompare(b.name)); break;
+      case "name-desc": sorted.sort((a, b) => b.name.localeCompare(a.name)); break;
+    }
+    return sorted;
+  }, [query, tool, category, language, source, sort]);
 
   const totalPages = Math.max(1, Math.ceil(results.length / ITEMS_PER_PAGE));
   const currentPage = Math.min(page, totalPages);
@@ -59,6 +69,18 @@ function CatalogPage() {
 
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center">
         <SearchBar value={query} onChange={handleQueryChange} className="flex-1" />
+        <select
+          value={sort}
+          onChange={(e) => { setSort(e.target.value); setPage(1); }}
+          className="h-9 rounded-md border border-border bg-secondary px-3 text-sm text-secondary-foreground focus:outline-none focus:ring-1 focus:ring-primary"
+        >
+          <option value="stars-desc">★ Most Stars</option>
+          <option value="stars-asc">★ Fewest Stars</option>
+          <option value="downloads-desc">↓ Most Downloads</option>
+          <option value="downloads-asc">↓ Fewest Downloads</option>
+          <option value="name-asc">A → Z</option>
+          <option value="name-desc">Z → A</option>
+        </select>
       </div>
 
       <div className="mb-8">
