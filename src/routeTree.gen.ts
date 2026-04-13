@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as WorkflowsRouteImport } from './routes/workflows'
 import { Route as InstallRouteImport } from './routes/install'
+import { Route as CompareRouteImport } from './routes/compare'
 import { Route as CatalogRouteImport } from './routes/catalog'
 import { Route as BundlesRouteImport } from './routes/bundles'
 import { Route as AboutRouteImport } from './routes/about'
@@ -25,6 +26,11 @@ const WorkflowsRoute = WorkflowsRouteImport.update({
 const InstallRoute = InstallRouteImport.update({
   id: '/install',
   path: '/install',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CompareRoute = CompareRouteImport.update({
+  id: '/compare',
+  path: '/compare',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CatalogRoute = CatalogRouteImport.update({
@@ -58,6 +64,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/bundles': typeof BundlesRoute
   '/catalog': typeof CatalogRoute
+  '/compare': typeof CompareRoute
   '/install': typeof InstallRoute
   '/workflows': typeof WorkflowsRoute
   '/skills/$skillId': typeof SkillsSkillIdRoute
@@ -67,6 +74,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/bundles': typeof BundlesRoute
   '/catalog': typeof CatalogRoute
+  '/compare': typeof CompareRoute
   '/install': typeof InstallRoute
   '/workflows': typeof WorkflowsRoute
   '/skills/$skillId': typeof SkillsSkillIdRoute
@@ -77,6 +85,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/bundles': typeof BundlesRoute
   '/catalog': typeof CatalogRoute
+  '/compare': typeof CompareRoute
   '/install': typeof InstallRoute
   '/workflows': typeof WorkflowsRoute
   '/skills/$skillId': typeof SkillsSkillIdRoute
@@ -88,6 +97,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/bundles'
     | '/catalog'
+    | '/compare'
     | '/install'
     | '/workflows'
     | '/skills/$skillId'
@@ -97,6 +107,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/bundles'
     | '/catalog'
+    | '/compare'
     | '/install'
     | '/workflows'
     | '/skills/$skillId'
@@ -106,6 +117,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/bundles'
     | '/catalog'
+    | '/compare'
     | '/install'
     | '/workflows'
     | '/skills/$skillId'
@@ -116,6 +128,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   BundlesRoute: typeof BundlesRoute
   CatalogRoute: typeof CatalogRoute
+  CompareRoute: typeof CompareRoute
   InstallRoute: typeof InstallRoute
   WorkflowsRoute: typeof WorkflowsRoute
   SkillsSkillIdRoute: typeof SkillsSkillIdRoute
@@ -135,6 +148,13 @@ declare module '@tanstack/react-router' {
       path: '/install'
       fullPath: '/install'
       preLoaderRoute: typeof InstallRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compare': {
+      id: '/compare'
+      path: '/compare'
+      fullPath: '/compare'
+      preLoaderRoute: typeof CompareRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/catalog': {
@@ -180,6 +200,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   BundlesRoute: BundlesRoute,
   CatalogRoute: CatalogRoute,
+  CompareRoute: CompareRoute,
   InstallRoute: InstallRoute,
   WorkflowsRoute: WorkflowsRoute,
   SkillsSkillIdRoute: SkillsSkillIdRoute,
