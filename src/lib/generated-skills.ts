@@ -357,7 +357,7 @@ export const skills: Skill[] = [
     "downloads": 6956,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -662,7 +662,7 @@ export const skills: Skill[] = [
     "downloads": 2221,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -689,7 +689,7 @@ export const skills: Skill[] = [
     "downloads": 605,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -722,7 +722,7 @@ export const skills: Skill[] = [
     "downloads": 24303,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -833,7 +833,7 @@ export const skills: Skill[] = [
     "downloads": 36898,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -1091,7 +1091,7 @@ export const skills: Skill[] = [
     "downloads": 24300,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -1746,7 +1746,7 @@ export const skills: Skill[] = [
     "downloads": 28786,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -1772,7 +1772,7 @@ export const skills: Skill[] = [
     "downloads": 16311,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -1801,7 +1801,7 @@ export const skills: Skill[] = [
     "downloads": 33594,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -1832,7 +1832,7 @@ export const skills: Skill[] = [
     "downloads": 2596,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -1865,7 +1865,7 @@ export const skills: Skill[] = [
     "downloads": 31908,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -1896,7 +1896,7 @@ export const skills: Skill[] = [
     "downloads": 44991,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -1924,7 +1924,7 @@ export const skills: Skill[] = [
     "downloads": 25794,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -1953,7 +1953,7 @@ export const skills: Skill[] = [
     "downloads": 4208,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -1982,7 +1982,7 @@ export const skills: Skill[] = [
     "downloads": 11803,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -2011,7 +2011,7 @@ export const skills: Skill[] = [
     "downloads": 31690,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": true
   },
   {
@@ -2044,7 +2044,7 @@ export const skills: Skill[] = [
     "downloads": 26096,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -2071,7 +2071,7 @@ export const skills: Skill[] = [
     "downloads": 33131,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -2396,7 +2396,7 @@ export const skills: Skill[] = [
     "downloads": 40770,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -2425,7 +2425,7 @@ export const skills: Skill[] = [
     "downloads": 8028,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -2545,7 +2545,7 @@ export const skills: Skill[] = [
     "downloads": 26692,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -2608,7 +2608,7 @@ export const skills: Skill[] = [
     "downloads": 40925,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -2790,7 +2790,7 @@ export const skills: Skill[] = [
     "downloads": 22881,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -2819,7 +2819,7 @@ export const skills: Skill[] = [
     "downloads": 23833,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -2851,7 +2851,7 @@ export const skills: Skill[] = [
     "downloads": 42356,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -2947,7 +2947,7 @@ export const skills: Skill[] = [
     "downloads": 35873,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -3037,7 +3037,7 @@ export const skills: Skill[] = [
     "downloads": 44742,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -3184,7 +3184,7 @@ export const skills: Skill[] = [
     "downloads": 15681,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -6965,7 +6965,7 @@ export const skills: Skill[] = [
     "downloads": 26389,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -7172,7 +7172,7 @@ export const skills: Skill[] = [
     "downloads": 35940,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -7204,7 +7204,7 @@ export const skills: Skill[] = [
     "downloads": 23440,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -7351,7 +7351,7 @@ export const skills: Skill[] = [
     "downloads": 13877,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -7469,7 +7469,7 @@ export const skills: Skill[] = [
     "downloads": 6392,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -7556,7 +7556,7 @@ export const skills: Skill[] = [
     "downloads": 28061,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -7797,7 +7797,7 @@ export const skills: Skill[] = [
     "downloads": 30592,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -7829,7 +7829,7 @@ export const skills: Skill[] = [
     "downloads": 29470,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -7858,7 +7858,7 @@ export const skills: Skill[] = [
     "downloads": 19083,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -7980,7 +7980,7 @@ export const skills: Skill[] = [
     "downloads": 27267,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -8700,7 +8700,7 @@ export const skills: Skill[] = [
     "downloads": 23138,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -8815,7 +8815,7 @@ export const skills: Skill[] = [
     "downloads": 33495,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -8843,7 +8843,7 @@ export const skills: Skill[] = [
     "downloads": 34462,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -8871,7 +8871,7 @@ export const skills: Skill[] = [
     "downloads": 2838,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -8899,7 +8899,7 @@ export const skills: Skill[] = [
     "downloads": 44999,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -9016,7 +9016,7 @@ export const skills: Skill[] = [
     "downloads": 26624,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -9078,7 +9078,7 @@ export const skills: Skill[] = [
     "downloads": 25559,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -9734,7 +9734,7 @@ export const skills: Skill[] = [
     "downloads": 26112,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -9908,7 +9908,7 @@ export const skills: Skill[] = [
     "downloads": 17082,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -10258,7 +10258,7 @@ export const skills: Skill[] = [
     "downloads": 20807,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -10371,7 +10371,7 @@ export const skills: Skill[] = [
     "downloads": 41800,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -10456,7 +10456,7 @@ export const skills: Skill[] = [
     "downloads": 7596,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -10484,7 +10484,7 @@ export const skills: Skill[] = [
     "downloads": 31627,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -10545,7 +10545,7 @@ export const skills: Skill[] = [
     "downloads": 32322,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -10667,7 +10667,7 @@ export const skills: Skill[] = [
     "downloads": 39957,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -11047,7 +11047,7 @@ export const skills: Skill[] = [
     "downloads": 6042,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -11074,7 +11074,7 @@ export const skills: Skill[] = [
     "downloads": 7262,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -11191,7 +11191,7 @@ export const skills: Skill[] = [
     "downloads": 12005,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -11517,7 +11517,7 @@ export const skills: Skill[] = [
     "downloads": 720,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -12056,7 +12056,7 @@ export const skills: Skill[] = [
     "downloads": 13760,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -12461,7 +12461,7 @@ export const skills: Skill[] = [
     "downloads": 27433,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": true
   },
   {
@@ -12547,7 +12547,7 @@ export const skills: Skill[] = [
     "downloads": 12371,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": true
   },
   {
@@ -12727,7 +12727,7 @@ export const skills: Skill[] = [
     "downloads": 27904,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -12754,7 +12754,7 @@ export const skills: Skill[] = [
     "downloads": 32410,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -13257,7 +13257,7 @@ export const skills: Skill[] = [
     "downloads": 28487,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -13492,7 +13492,7 @@ export const skills: Skill[] = [
     "downloads": 37760,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -13581,7 +13581,7 @@ export const skills: Skill[] = [
     "downloads": 5709,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": true
   },
   {
@@ -13990,7 +13990,7 @@ export const skills: Skill[] = [
     "downloads": 21327,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14077,7 +14077,7 @@ export const skills: Skill[] = [
     "downloads": 40821,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14108,7 +14108,7 @@ export const skills: Skill[] = [
     "downloads": 29200,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14167,7 +14167,7 @@ export const skills: Skill[] = [
     "downloads": 39896,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14198,7 +14198,7 @@ export const skills: Skill[] = [
     "downloads": 25428,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14226,7 +14226,7 @@ export const skills: Skill[] = [
     "downloads": 17303,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14256,7 +14256,7 @@ export const skills: Skill[] = [
     "downloads": 32408,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14466,7 +14466,7 @@ export const skills: Skill[] = [
     "downloads": 39490,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14585,7 +14585,7 @@ export const skills: Skill[] = [
     "downloads": 36997,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14616,7 +14616,7 @@ export const skills: Skill[] = [
     "downloads": 12683,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14645,7 +14645,7 @@ export const skills: Skill[] = [
     "downloads": 8737,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14707,7 +14707,7 @@ export const skills: Skill[] = [
     "downloads": 31139,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14860,7 +14860,7 @@ export const skills: Skill[] = [
     "downloads": 25343,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -14888,7 +14888,7 @@ export const skills: Skill[] = [
     "downloads": 17297,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15035,7 +15035,7 @@ export const skills: Skill[] = [
     "downloads": 17629,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15095,7 +15095,7 @@ export const skills: Skill[] = [
     "downloads": 19415,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15123,7 +15123,7 @@ export const skills: Skill[] = [
     "downloads": 17727,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15152,7 +15152,7 @@ export const skills: Skill[] = [
     "downloads": 20138,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15215,7 +15215,7 @@ export const skills: Skill[] = [
     "downloads": 25758,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15272,7 +15272,7 @@ export const skills: Skill[] = [
     "downloads": 30915,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15299,7 +15299,7 @@ export const skills: Skill[] = [
     "downloads": 24174,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15329,7 +15329,7 @@ export const skills: Skill[] = [
     "downloads": 5880,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15357,7 +15357,7 @@ export const skills: Skill[] = [
     "downloads": 18752,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15386,7 +15386,7 @@ export const skills: Skill[] = [
     "downloads": 43831,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15416,7 +15416,7 @@ export const skills: Skill[] = [
     "downloads": 36524,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15444,7 +15444,7 @@ export const skills: Skill[] = [
     "downloads": 25723,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15471,7 +15471,7 @@ export const skills: Skill[] = [
     "downloads": 17220,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15498,7 +15498,7 @@ export const skills: Skill[] = [
     "downloads": 25613,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15525,7 +15525,7 @@ export const skills: Skill[] = [
     "downloads": 25488,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15557,7 +15557,7 @@ export const skills: Skill[] = [
     "downloads": 32670,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -15676,7 +15676,7 @@ export const skills: Skill[] = [
     "downloads": 30598,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -16060,7 +16060,7 @@ export const skills: Skill[] = [
     "downloads": 36066,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -16408,7 +16408,7 @@ export const skills: Skill[] = [
     "downloads": 19933,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -16437,7 +16437,7 @@ export const skills: Skill[] = [
     "downloads": 14333,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -16821,7 +16821,7 @@ export const skills: Skill[] = [
     "downloads": 36985,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -16936,7 +16936,7 @@ export const skills: Skill[] = [
     "downloads": 20802,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -17048,7 +17048,7 @@ export const skills: Skill[] = [
     "downloads": 2817,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -17110,7 +17110,7 @@ export const skills: Skill[] = [
     "downloads": 22846,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -17143,7 +17143,7 @@ export const skills: Skill[] = [
     "downloads": 15363,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -17172,7 +17172,7 @@ export const skills: Skill[] = [
     "downloads": 8720,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -17203,7 +17203,7 @@ export const skills: Skill[] = [
     "downloads": 39854,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -17232,7 +17232,7 @@ export const skills: Skill[] = [
     "downloads": 36356,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -17373,7 +17373,7 @@ export const skills: Skill[] = [
     "downloads": 32617,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -17402,7 +17402,7 @@ export const skills: Skill[] = [
     "downloads": 6366,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -17493,7 +17493,7 @@ export const skills: Skill[] = [
     "downloads": 3518,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -18026,7 +18026,7 @@ export const skills: Skill[] = [
     "downloads": 31788,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -18230,7 +18230,7 @@ export const skills: Skill[] = [
     "downloads": 10990,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -18259,7 +18259,7 @@ export const skills: Skill[] = [
     "downloads": 22248,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -18290,7 +18290,7 @@ export const skills: Skill[] = [
     "downloads": 25467,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -18350,7 +18350,7 @@ export const skills: Skill[] = [
     "downloads": 10635,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -18381,7 +18381,7 @@ export const skills: Skill[] = [
     "downloads": 26187,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -18410,7 +18410,7 @@ export const skills: Skill[] = [
     "downloads": 19404,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -18857,7 +18857,7 @@ export const skills: Skill[] = [
     "downloads": 29831,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -19073,7 +19073,7 @@ export const skills: Skill[] = [
     "downloads": 30317,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -19131,7 +19131,7 @@ export const skills: Skill[] = [
     "downloads": 24797,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -19158,7 +19158,7 @@ export const skills: Skill[] = [
     "downloads": 4140,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -19395,7 +19395,7 @@ export const skills: Skill[] = [
     "downloads": 30218,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -20296,7 +20296,7 @@ export const skills: Skill[] = [
     "downloads": 14464,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -20779,7 +20779,7 @@ export const skills: Skill[] = [
     "downloads": 43432,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -20805,7 +20805,7 @@ export const skills: Skill[] = [
     "downloads": 6174,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -20833,7 +20833,7 @@ export const skills: Skill[] = [
     "downloads": 21053,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -20865,7 +20865,7 @@ export const skills: Skill[] = [
     "downloads": 30977,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -20894,7 +20894,7 @@ export const skills: Skill[] = [
     "downloads": 11211,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -20924,7 +20924,7 @@ export const skills: Skill[] = [
     "downloads": 30438,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -20952,7 +20952,7 @@ export const skills: Skill[] = [
     "downloads": 10258,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -20980,7 +20980,7 @@ export const skills: Skill[] = [
     "downloads": 6265,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -21006,7 +21006,7 @@ export const skills: Skill[] = [
     "downloads": 34157,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -21034,7 +21034,7 @@ export const skills: Skill[] = [
     "downloads": 13037,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -21094,7 +21094,7 @@ export const skills: Skill[] = [
     "downloads": 43604,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -21124,7 +21124,7 @@ export const skills: Skill[] = [
     "downloads": 4789,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -21299,7 +21299,7 @@ export const skills: Skill[] = [
     "downloads": 41029,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -21481,7 +21481,7 @@ export const skills: Skill[] = [
     "downloads": 21284,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22002,7 +22002,7 @@ export const skills: Skill[] = [
     "downloads": 26237,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22123,7 +22123,7 @@ export const skills: Skill[] = [
     "downloads": 44256,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22152,7 +22152,7 @@ export const skills: Skill[] = [
     "downloads": 33405,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22271,7 +22271,7 @@ export const skills: Skill[] = [
     "downloads": 616,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22396,7 +22396,7 @@ export const skills: Skill[] = [
     "downloads": 33932,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22427,7 +22427,7 @@ export const skills: Skill[] = [
     "downloads": 32686,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22460,7 +22460,7 @@ export const skills: Skill[] = [
     "downloads": 24704,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22493,7 +22493,7 @@ export const skills: Skill[] = [
     "downloads": 22168,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22524,7 +22524,7 @@ export const skills: Skill[] = [
     "downloads": 9723,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22555,7 +22555,7 @@ export const skills: Skill[] = [
     "downloads": 38304,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22586,7 +22586,7 @@ export const skills: Skill[] = [
     "downloads": 29439,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22646,7 +22646,7 @@ export const skills: Skill[] = [
     "downloads": 221,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22845,7 +22845,7 @@ export const skills: Skill[] = [
     "downloads": 45023,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -22876,7 +22876,7 @@ export const skills: Skill[] = [
     "downloads": 21881,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23202,7 +23202,7 @@ export const skills: Skill[] = [
     "downloads": 42479,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23232,7 +23232,7 @@ export const skills: Skill[] = [
     "downloads": 11606,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23382,7 +23382,7 @@ export const skills: Skill[] = [
     "downloads": 21806,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23444,7 +23444,7 @@ export const skills: Skill[] = [
     "downloads": 10595,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23473,7 +23473,7 @@ export const skills: Skill[] = [
     "downloads": 12597,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23504,7 +23504,7 @@ export const skills: Skill[] = [
     "downloads": 29586,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23533,7 +23533,7 @@ export const skills: Skill[] = [
     "downloads": 27592,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23562,7 +23562,7 @@ export const skills: Skill[] = [
     "downloads": 493,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23593,7 +23593,7 @@ export const skills: Skill[] = [
     "downloads": 2324,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23622,7 +23622,7 @@ export const skills: Skill[] = [
     "downloads": 4116,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23652,7 +23652,7 @@ export const skills: Skill[] = [
     "downloads": 4816,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23683,7 +23683,7 @@ export const skills: Skill[] = [
     "downloads": 16735,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23712,7 +23712,7 @@ export const skills: Skill[] = [
     "downloads": 5479,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23745,7 +23745,7 @@ export const skills: Skill[] = [
     "downloads": 38206,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23772,7 +23772,7 @@ export const skills: Skill[] = [
     "downloads": 36104,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23801,7 +23801,7 @@ export const skills: Skill[] = [
     "downloads": 39940,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23832,7 +23832,7 @@ export const skills: Skill[] = [
     "downloads": 8683,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23863,7 +23863,7 @@ export const skills: Skill[] = [
     "downloads": 10060,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23892,7 +23892,7 @@ export const skills: Skill[] = [
     "downloads": 2620,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23921,7 +23921,7 @@ export const skills: Skill[] = [
     "downloads": 28807,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23954,7 +23954,7 @@ export const skills: Skill[] = [
     "downloads": 27976,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -23985,7 +23985,7 @@ export const skills: Skill[] = [
     "downloads": 3413,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -24016,7 +24016,7 @@ export const skills: Skill[] = [
     "downloads": 14934,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -24045,7 +24045,7 @@ export const skills: Skill[] = [
     "downloads": 37861,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -24074,7 +24074,7 @@ export const skills: Skill[] = [
     "downloads": 9893,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -24101,7 +24101,7 @@ export const skills: Skill[] = [
     "downloads": 15675,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -24132,7 +24132,7 @@ export const skills: Skill[] = [
     "downloads": 11417,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": true
   },
   {
@@ -24163,7 +24163,7 @@ export const skills: Skill[] = [
     "downloads": 34194,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -24314,7 +24314,7 @@ export const skills: Skill[] = [
     "downloads": 3645,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -24371,7 +24371,7 @@ export const skills: Skill[] = [
     "downloads": 36974,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -24402,7 +24402,7 @@ export const skills: Skill[] = [
     "downloads": 2903,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -24462,7 +24462,7 @@ export const skills: Skill[] = [
     "downloads": 42848,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -24660,7 +24660,7 @@ export const skills: Skill[] = [
     "downloads": 13788,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -24690,7 +24690,7 @@ export const skills: Skill[] = [
     "downloads": 17913,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -25328,7 +25328,7 @@ export const skills: Skill[] = [
     "downloads": 14458,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -25385,7 +25385,7 @@ export const skills: Skill[] = [
     "downloads": 26398,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -25414,7 +25414,7 @@ export const skills: Skill[] = [
     "downloads": 35090,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -25737,7 +25737,7 @@ export const skills: Skill[] = [
     "downloads": 32543,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -26036,7 +26036,7 @@ export const skills: Skill[] = [
     "downloads": 30118,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -26274,7 +26274,7 @@ export const skills: Skill[] = [
     "downloads": 11783,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -26333,7 +26333,7 @@ export const skills: Skill[] = [
     "downloads": 34537,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -26361,7 +26361,7 @@ export const skills: Skill[] = [
     "downloads": 5102,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -26418,7 +26418,7 @@ export const skills: Skill[] = [
     "downloads": 13729,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -26664,7 +26664,7 @@ export const skills: Skill[] = [
     "downloads": 5135,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -26724,7 +26724,7 @@ export const skills: Skill[] = [
     "downloads": 2617,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -26806,7 +26806,7 @@ export const skills: Skill[] = [
     "downloads": 12117,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -26921,7 +26921,7 @@ export const skills: Skill[] = [
     "downloads": 38191,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -27438,7 +27438,7 @@ export const skills: Skill[] = [
     "downloads": 23737,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -27465,7 +27465,7 @@ export const skills: Skill[] = [
     "downloads": 40032,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -27589,7 +27589,7 @@ export const skills: Skill[] = [
     "downloads": 23189,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -27737,7 +27737,7 @@ export const skills: Skill[] = [
     "downloads": 2976,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -27768,7 +27768,7 @@ export const skills: Skill[] = [
     "downloads": 6334,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -27797,7 +27797,7 @@ export const skills: Skill[] = [
     "downloads": 28468,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -27826,7 +27826,7 @@ export const skills: Skill[] = [
     "downloads": 28178,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -27855,7 +27855,7 @@ export const skills: Skill[] = [
     "downloads": 5779,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -27886,7 +27886,7 @@ export const skills: Skill[] = [
     "downloads": 12730,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -28008,7 +28008,7 @@ export const skills: Skill[] = [
     "downloads": 43084,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -28276,7 +28276,7 @@ export const skills: Skill[] = [
     "downloads": 1795,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -28336,7 +28336,7 @@ export const skills: Skill[] = [
     "downloads": 35483,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -28364,7 +28364,7 @@ export const skills: Skill[] = [
     "downloads": 40555,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -28391,7 +28391,7 @@ export const skills: Skill[] = [
     "downloads": 30245,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -28510,7 +28510,7 @@ export const skills: Skill[] = [
     "downloads": 42277,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -28664,7 +28664,7 @@ export const skills: Skill[] = [
     "downloads": 26282,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -28840,7 +28840,7 @@ export const skills: Skill[] = [
     "downloads": 23646,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -28933,7 +28933,7 @@ export const skills: Skill[] = [
     "downloads": 43257,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -28964,7 +28964,7 @@ export const skills: Skill[] = [
     "downloads": 7511,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -29578,7 +29578,7 @@ export const skills: Skill[] = [
     "downloads": 18064,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -29641,7 +29641,7 @@ export const skills: Skill[] = [
     "downloads": 40453,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -29964,7 +29964,7 @@ export const skills: Skill[] = [
     "downloads": 16884,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -30027,7 +30027,7 @@ export const skills: Skill[] = [
     "downloads": 13510,
     "risk": "safe",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -30055,7 +30055,7 @@ export const skills: Skill[] = [
     "downloads": 7612,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -30113,7 +30113,7 @@ export const skills: Skill[] = [
     "downloads": 33403,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -30146,7 +30146,7 @@ export const skills: Skill[] = [
     "downloads": 41098,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -30270,7 +30270,7 @@ export const skills: Skill[] = [
     "downloads": 487,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -30471,7 +30471,7 @@ export const skills: Skill[] = [
     "downloads": 42854,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -30501,7 +30501,7 @@ export const skills: Skill[] = [
     "downloads": 2265,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -30528,7 +30528,7 @@ export const skills: Skill[] = [
     "downloads": 27458,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -30706,7 +30706,7 @@ export const skills: Skill[] = [
     "downloads": 13260,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -30735,7 +30735,7 @@ export const skills: Skill[] = [
     "downloads": 30982,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -30979,7 +30979,7 @@ export const skills: Skill[] = [
     "downloads": 12363,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -31010,7 +31010,7 @@ export const skills: Skill[] = [
     "downloads": 44165,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -31040,7 +31040,7 @@ export const skills: Skill[] = [
     "downloads": 33272,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": true
   },
   {
@@ -31273,7 +31273,7 @@ export const skills: Skill[] = [
     "downloads": 5483,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -31302,7 +31302,7 @@ export const skills: Skill[] = [
     "downloads": 33358,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -31331,7 +31331,7 @@ export const skills: Skill[] = [
     "downloads": 17868,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -31518,7 +31518,7 @@ export const skills: Skill[] = [
     "downloads": 42670,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": true
   },
   {
@@ -32279,7 +32279,7 @@ export const skills: Skill[] = [
     "downloads": 15796,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -32463,7 +32463,7 @@ export const skills: Skill[] = [
     "downloads": 23458,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -32491,7 +32491,7 @@ export const skills: Skill[] = [
     "downloads": 23124,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -32519,7 +32519,7 @@ export const skills: Skill[] = [
     "downloads": 40208,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -32547,7 +32547,7 @@ export const skills: Skill[] = [
     "downloads": 6281,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -32577,7 +32577,7 @@ export const skills: Skill[] = [
     "downloads": 31363,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -32609,7 +32609,7 @@ export const skills: Skill[] = [
     "downloads": 29999,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -32639,7 +32639,7 @@ export const skills: Skill[] = [
     "downloads": 32871,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -32669,7 +32669,7 @@ export const skills: Skill[] = [
     "downloads": 39343,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -32695,7 +32695,7 @@ export const skills: Skill[] = [
     "downloads": 43889,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -32753,7 +32753,7 @@ export const skills: Skill[] = [
     "downloads": 2325,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -32927,7 +32927,7 @@ export const skills: Skill[] = [
     "downloads": 14509,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -33335,7 +33335,7 @@ export const skills: Skill[] = [
     "downloads": 2443,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -33367,7 +33367,7 @@ export const skills: Skill[] = [
     "downloads": 34396,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -33693,7 +33693,7 @@ export const skills: Skill[] = [
     "downloads": 35120,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -33720,7 +33720,7 @@ export const skills: Skill[] = [
     "downloads": 43591,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -33874,7 +33874,7 @@ export const skills: Skill[] = [
     "downloads": 41298,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -33994,7 +33994,7 @@ export const skills: Skill[] = [
     "downloads": 25546,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -34561,7 +34561,7 @@ export const skills: Skill[] = [
     "downloads": 20864,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -34591,7 +34591,7 @@ export const skills: Skill[] = [
     "downloads": 39297,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -35149,7 +35149,7 @@ export const skills: Skill[] = [
     "downloads": 31465,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -35408,7 +35408,7 @@ export const skills: Skill[] = [
     "downloads": 40577,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
@@ -35556,7 +35556,7 @@ export const skills: Skill[] = [
     "downloads": 1873,
     "risk": "unknown",
     "source": "community",
-    "dateAdded": null,
+    "dateAdded": "",
     "featured": false
   },
   {
