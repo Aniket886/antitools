@@ -12,6 +12,7 @@ export function Header() {
     { to: "/catalog" as const, label: "Catalog" },
     { to: "/bundles" as const, label: "Bundles" },
     { to: "/workflows" as const, label: "Workflows" },
+    { to: "/leaderboard" as const, label: "Leaderboard" },
     { to: "/about" as const, label: "About" },
   ];
 
