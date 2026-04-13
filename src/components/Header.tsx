@@ -1,9 +1,11 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X, Download, Sun, Moon } from "lucide-react";
 import { useState } from "react";
+import { useTheme } from "@/hooks/use-theme";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   const navLinks = [
     { to: "/" as const, label: "Home", exact: true },
@@ -44,6 +46,13 @@ export function Header() {
             <Download className="h-3.5 w-3.5" />
             Install
           </Link>
+          <button
+            onClick={toggleTheme}
+            className="ml-1 rounded-md p-2 text-muted-foreground transition-colors hover:text-foreground"
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+          </button>
         </nav>
 
         <button
