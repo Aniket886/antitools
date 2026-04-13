@@ -9,14 +9,32 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WorkflowsRouteImport } from './routes/workflows'
+import { Route as InstallRouteImport } from './routes/install'
 import { Route as CatalogRouteImport } from './routes/catalog'
+import { Route as BundlesRouteImport } from './routes/bundles'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SkillsSkillIdRouteImport } from './routes/skills.$skillId'
 
+const WorkflowsRoute = WorkflowsRouteImport.update({
+  id: '/workflows',
+  path: '/workflows',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InstallRoute = InstallRouteImport.update({
+  id: '/install',
+  path: '/install',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CatalogRoute = CatalogRouteImport.update({
   id: '/catalog',
   path: '/catalog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BundlesRoute = BundlesRouteImport.update({
+  id: '/bundles',
+  path: '/bundles',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -38,44 +56,99 @@ const SkillsSkillIdRoute = SkillsSkillIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/bundles': typeof BundlesRoute
   '/catalog': typeof CatalogRoute
+  '/install': typeof InstallRoute
+  '/workflows': typeof WorkflowsRoute
   '/skills/$skillId': typeof SkillsSkillIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/bundles': typeof BundlesRoute
   '/catalog': typeof CatalogRoute
+  '/install': typeof InstallRoute
+  '/workflows': typeof WorkflowsRoute
   '/skills/$skillId': typeof SkillsSkillIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/bundles': typeof BundlesRoute
   '/catalog': typeof CatalogRoute
+  '/install': typeof InstallRoute
+  '/workflows': typeof WorkflowsRoute
   '/skills/$skillId': typeof SkillsSkillIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/catalog' | '/skills/$skillId'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/bundles'
+    | '/catalog'
+    | '/install'
+    | '/workflows'
+    | '/skills/$skillId'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/catalog' | '/skills/$skillId'
-  id: '__root__' | '/' | '/about' | '/catalog' | '/skills/$skillId'
+  to:
+    | '/'
+    | '/about'
+    | '/bundles'
+    | '/catalog'
+    | '/install'
+    | '/workflows'
+    | '/skills/$skillId'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/bundles'
+    | '/catalog'
+    | '/install'
+    | '/workflows'
+    | '/skills/$skillId'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  BundlesRoute: typeof BundlesRoute
   CatalogRoute: typeof CatalogRoute
+  InstallRoute: typeof InstallRoute
+  WorkflowsRoute: typeof WorkflowsRoute
   SkillsSkillIdRoute: typeof SkillsSkillIdRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/workflows': {
+      id: '/workflows'
+      path: '/workflows'
+      fullPath: '/workflows'
+      preLoaderRoute: typeof WorkflowsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/install': {
+      id: '/install'
+      path: '/install'
+      fullPath: '/install'
+      preLoaderRoute: typeof InstallRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/catalog': {
       id: '/catalog'
       path: '/catalog'
       fullPath: '/catalog'
       preLoaderRoute: typeof CatalogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bundles': {
+      id: '/bundles'
+      path: '/bundles'
+      fullPath: '/bundles'
+      preLoaderRoute: typeof BundlesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -105,7 +178,10 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  BundlesRoute: BundlesRoute,
   CatalogRoute: CatalogRoute,
+  InstallRoute: InstallRoute,
+  WorkflowsRoute: WorkflowsRoute,
   SkillsSkillIdRoute: SkillsSkillIdRoute,
 }
 export const routeTree = rootRouteImport
