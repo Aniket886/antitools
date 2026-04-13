@@ -73,7 +73,12 @@ function SkillDetailPage() {
             </Badge>
           )}
         </div>
-        <p className="mt-1 text-sm text-muted-foreground">by {skill.author}</p>
+        <p className="mt-1 text-sm text-muted-foreground">
+          by{" "}
+          <Link to="/contributors/$author" params={{ author: skill.author }} className="text-primary hover:underline">
+            {skill.author}
+          </Link>
+        </p>
         <p className="mt-4 text-lg text-muted-foreground leading-relaxed">{skill.description}</p>
 
         <div className="mt-4 flex items-center gap-4 text-sm text-muted-foreground">
