@@ -1,4 +1,4 @@
-import type { Skill } from "./types";
+import type { Skill, Bundle, Workflow } from "./types";
 
 export const skills: Skill[] = [
   { id: "auto-debug-tracer", name: "Auto Debug Tracer", description: "Automatically traces through stack traces and identifies root cause of runtime errors with contextual fix suggestions.", author: "alexchen", tags: ["debugging", "error-handling", "tracing"], supportedTools: ["Claude Code", "Cursor", "Codex CLI"], language: "Python", category: "debugging", installCommands: { "Claude Code": "claude skill install auto-debug-tracer", "Cursor": "cursor ext install auto-debug-tracer", "Codex CLI": "codex install auto-debug-tracer" }, usageExample: "# Paste a stack trace and run:\nauto-debug-tracer analyze --file app.py --line 42", stars: 892, downloads: 14200, featured: true },

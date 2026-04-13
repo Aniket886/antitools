@@ -29,3 +29,29 @@ export interface Skill {
   downloads: number;
   featured?: boolean;
 }
+
+export interface Bundle {
+  id: string;
+  name: string;
+  description: string;
+  skillIds: string[];
+  icon: string;
+  installCommand: string;
+  tags: string[];
+}
+
+export interface Workflow {
+  id: string;
+  name: string;
+  description: string;
+  steps: WorkflowStep[];
+  supportedTools: AITool[];
+  installCommand: string;
+  tags: string[];
+}
+
+export interface WorkflowStep {
+  skillId: string;
+  name: string;
+  description: string;
+}
