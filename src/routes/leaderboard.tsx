@@ -104,7 +104,9 @@ function LeaderboardPage() {
             >
               <div className="mb-3 flex justify-center">{rankIcons[i]}</div>
               <div className="mb-1 text-xs font-medium text-muted-foreground">#{i + 1}</div>
-              <h3 className="font-heading text-lg font-bold text-foreground">{c.author}</h3>
+              <Link to="/contributors/$author" params={{ author: c.author }} className="font-heading text-lg font-bold text-foreground hover:text-primary transition-colors">
+                {c.author}
+              </Link>
               <div className="mt-3 flex justify-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1">
                   <Star className="h-3.5 w-3.5" /> {formatNumber(c.totalStars)}
@@ -172,7 +174,11 @@ function LeaderboardPage() {
                   <td className="px-4 py-3 text-muted-foreground font-mono text-xs">
                     {i < 3 ? rankIcons[i] : i + 1}
                   </td>
-                  <td className="px-4 py-3 font-medium text-foreground">{c.author}</td>
+                  <td className="px-4 py-3 font-medium">
+                    <Link to="/contributors/$author" params={{ author: c.author }} className="text-foreground hover:text-primary transition-colors">
+                      {c.author}
+                    </Link>
+                  </td>
                   <td className="px-4 py-3 text-right text-foreground tabular-nums">{c.totalStars.toLocaleString()}</td>
                   <td className="px-4 py-3 text-right text-foreground tabular-nums">{c.totalDownloads.toLocaleString()}</td>
                   <td className="px-4 py-3 text-right text-foreground tabular-nums">{c.skillCount}</td>
