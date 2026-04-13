@@ -75,6 +75,13 @@ export function Header() {
               <Download className="h-3.5 w-3.5" />
               Install
             </Link>
+            <button
+              onClick={toggleTheme}
+              className="rounded-md p-2 text-muted-foreground transition-colors hover:text-foreground"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </button>
           </nav>
         </div>
       )}
