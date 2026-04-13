@@ -1,32 +1,31 @@
 
 
-## Antigravity Awesome Skills — Web App
+## Enhance Web App with Bundles, Workflows, and Installer
 
-A sleek, dark-themed web catalog for browsing 1,400+ agentic AI coding skills across Claude Code, Cursor, Codex CLI, Gemini CLI, and Antigravity.
+The system summary describes features (bundles, workflows, installer CLI) that aren't yet reflected in the web app. Here's a plan to add them.
 
-### Design Direction
-- **Palette**: Midnight Indigo — deep navy (#0a0a1a, #141432, #1e1e5a) with electric indigo (#4f46e5) accents
-- **Typography**: Space Grotesk headings + DM Sans body — clean geometric developer aesthetic
-- **Layout**: Card grid with search bar and filters at top
-- **Style**: Generous whitespace, subtle card borders with indigo glow on hover, rounded-lg corners, smooth transitions
+### New Pages
 
-### Pages & Routes
+1. **Bundles page (`/bundles`)** — Curated skill bundles (e.g., "SaaS MVP Starter", "Security Hardening", "DevOps Essentials") showing grouped skills with one-click install commands for the entire bundle
+2. **Workflows page (`/workflows`)** — Multi-step automated workflows that chain skills together (e.g., "PR Review Pipeline": lint → test-gen → security-scan → changelog)
+3. **Install page (`/install`)** — Quick-start guide showing `npx antigravity-awesome-skills` usage, tool-specific plugin instructions, and configuration options
 
-1. **Homepage (`/`)** — Hero section with stats (1,400+ skills, 32K+ stars, 5 supported tools), search bar, and featured skill cards
-2. **Catalog (`/catalog`)** — Full searchable/filterable card grid of all skills with autocomplete search, category/tag filters (by AI tool, language, use case), and pagination
-3. **Skill Detail (`/skills/$skillId`)** — Individual skill page with description, install CLI commands for each supported AI tool (copy-to-clipboard), usage examples, tags, and author info
-4. **About (`/about`)** — Project overview, supported AI tools, contribution guidelines, MIT license info
+### Data Changes
 
-### Key Features
+- Add `bundles` array to `skills-data.ts` with ~8 curated bundles, each referencing existing skill IDs
+- Add `workflows` array with ~5 workflow definitions showing skill chaining
+- Add bundle/workflow TypeScript types to `types.ts`
 
-- **Search with autocomplete** — Instant fuzzy search across skill names, descriptions, and tags
-- **Category/tag filtering** — Filter by AI tool (Claude Code, Cursor, etc.), language (Python, JS, etc.), and use case (debugging, refactoring, testing, etc.)
-- **Install CLI instructions** — Each skill shows copy-paste install commands for supported AI tools with one-click copy
-- **Skill detail pages** — Rich detail view with docs, examples, and compatibility info
-- **Responsive design** — Works great on mobile and desktop
-- **Mock data** — ~50 representative skills with realistic names, descriptions, and categories to demonstrate the catalog
+### Navigation Updates
 
-### Data Model (client-side mock)
+- Add Bundles, Workflows, and Install links to Header nav
+- Add a "Quick Install" CTA button in the Header (styled with primary color)
+- Update Homepage to include a bundles preview section and install command snippet
 
-Skills will have: id, name, description, author, tags, supportedTools, language, category, installCommands, usageExample, stars, downloads.
+### Technical Details
+
+- 3 new route files in `src/routes/`
+- Updated `Header.tsx` with expanded nav
+- Updated `skills-data.ts` and `types.ts` with new data structures
+- All client-side, no backend needed
 
