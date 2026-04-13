@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Star, Download, Package, Users, ArrowRight } from "lucide-react";
+import { Star, Download, Package, Users, ArrowRight, Copy, Check, Terminal } from "lucide-react";
 import { SearchBar } from "@/components/SearchBar";
 import { SkillCard } from "@/components/SkillCard";
-import { featuredSkills, skills, searchSkills } from "@/lib/skills-data";
+import { featuredSkills, skills, searchSkills, bundles } from "@/lib/skills-data";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -11,7 +11,14 @@ export const Route = createFileRoute("/")({
 
 function HomePage() {
   const [query, setQuery] = useState("");
+  const [installCopied, setInstallCopied] = useState(false);
   const searchResults = query ? searchSkills(query) : [];
+
+  const handleCopyInstall = () => {
+    navigator.clipboard.writeText("npx antigravity-awesome-skills");
+    setInstallCopied(true);
+    setTimeout(() => setInstallCopied(false), 2000);
+  };
 
   return (
     <div>
@@ -29,7 +36,23 @@ function HomePage() {
               The largest open-source catalog of skills for Claude Code, Cursor, Codex CLI, Gemini CLI, and Antigravity. Install with one command.
             </p>
 
-            <div className="mx-auto mt-8 max-w-xl">
+            {/* Install command */}
+            <div className="mx-auto mt-8 max-w-md">
+              <button
+                onClick={handleCopyInstall}
+                className="flex w-full items-center gap-3 rounded-xl border border-border bg-secondary/50 px-5 py-3.5 font-mono text-sm text-foreground transition-colors hover:bg-secondary/80"
+              >
+                <Terminal className="h-4 w-4 shrink-0 text-primary" />
+                <span className="flex-1 text-left">npx antigravity-awesome-skills</span>
+                {installCopied ? (
+                  <Check className="h-4 w-4 shrink-0 text-green-400" />
+                ) : (
+                  <Copy className="h-4 w-4 shrink-0 text-muted-foreground" />
+                )}
+              </button>
+            </div>
+
+            <div className="mx-auto mt-6 max-w-xl">
               <SearchBar value={query} onChange={setQuery} />
               {query && searchResults.length > 0 && (
                 <p className="mt-2 text-sm text-muted-foreground">
@@ -89,9 +112,38 @@ function HomePage() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {featuredSkills.slice(0, 9).map((skill) => (
+          {featuredSkills.slice(0, 6).map((skill) => (
             <SkillCard key={skill.id} skill={skill} />
           ))}
+        </div>
+      </section>
+
+      {/* Bundles Preview */}
+      <section className="border-t border-border bg-secondary/20">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mb-8 flex items-end justify-between">
+            <div>
+              <h2 className="font-heading text-2xl font-bold text-foreground">Popular Bundles</h2>
+              <p className="mt-1 text-sm text-muted-foreground">Curated skill collections for common workflows</p>
+            </div>
+            <Link to="/bundles" className="flex items-center gap-1 text-sm font-medium text-primary hover:underline">
+              View all <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {bundles.slice(0, 4).map((bundle) => (
+              <Link
+                key={bundle.id}
+                to="/bundles"
+                className="rounded-xl border border-border bg-card p-5 transition-all hover:border-primary/40 hover:shadow-[0_0_20px_-5px_hsl(var(--primary)/0.15)]"
+              >
+                <span className="text-2xl">{bundle.icon}</span>
+                <h3 className="mt-2 font-heading text-sm font-bold text-foreground">{bundle.name}</h3>
+                <p className="mt-1 text-xs text-muted-foreground line-clamp-2">{bundle.description}</p>
+                <p className="mt-2 text-xs text-primary">{bundle.skillIds.length} skills</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
